@@ -1,6 +1,10 @@
 <div class="form-group">
   <div class="input-group">
-    <span class="input-group-text"><i class="fa fa-lock fa-fw"></i></span>
+    <div class="input-group-prepend">
+      <span class="input-group-text">
+        <i class="fa fa-lock fa-fw"></i>
+      </span>
+    </div>
+    <%= f.text_field :otp_code_token, placeholder: 'Token', class: 'form-control' %>
   </div>
-  <%= f.text_field :otp_code_token, placeholder: 'Token', class: 'form-control' %>
 </div>
